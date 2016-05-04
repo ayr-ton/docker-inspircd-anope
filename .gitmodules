@@ -1,0 +1,6 @@
+[submodule "inspircd"]
+	path = inspircd
+	url = https://github.com/ayr-ton/docker-inspircd
+[submodule "anope"]
+	path = anope
+	url = https://github.com/ayr-ton/docker-anope
