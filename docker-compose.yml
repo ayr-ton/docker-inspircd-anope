@@ -1,0 +1,18 @@
+version: "2"
+services:
+  ircd:
+      working_dir: /inspircd
+      command: /inspircd/build/build.sh
+      build: .
+      ports:
+        - "6664"
+        - "6667"
+        - "6697"
+
+  anope:
+      working_dir: /anope
+      build: .
+      ports:
+        - "80"
+      depends_on:
+        - ircd
